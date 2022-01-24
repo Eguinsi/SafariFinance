@@ -12,9 +12,9 @@ const IndexPage = (props) => (
   <Layout displayCard pathname={props.location.pathname} title="Zebra Finanace Homepage" description="Zebra Finance is the world's first 'zp' decentralised finance application.">
     <Landing
       text={
-        <h2>
-        Enter The Safari!
-        </h2>
+        <h3>
+         the World's first 'zp' decentralised finance application
+        </h3>
       }
     />
     <About/>
