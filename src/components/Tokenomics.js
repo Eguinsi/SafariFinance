@@ -67,15 +67,7 @@ function Tokenomics() {
           countStart={countStart}
           src="/coins.svg"
           num={420000000}
-          sub={
-            <>
-              <p>
-                <b>Total</b> <br />
-                <b style={{textDecoration:'underline'}}>Cross-chain liquidity:</b> <br/> 37.6%
-                <br />
-              </p>
-            </>
-          }
+          sub={<p>Total:</p>}
         />
         <Card
           countStart={countStart}
@@ -98,7 +90,7 @@ function Tokenomics() {
           src="/IDO.svg"
           num={35}
           percent={true}
-          sub={<p>IDO</p>}
+          sub={<p>Fairlaunch, 100% added to LP</p>}
         />
         <Card
           countStart={countStart}
