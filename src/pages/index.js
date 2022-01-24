@@ -13,7 +13,7 @@ const IndexPage = (props) => (
     <Landing
       text={
         <h3>
-         the World's first 'zp' decentralised finance application
+        Enter The Safari!
         </h3>
       }
     />
