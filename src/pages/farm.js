@@ -3,6 +3,22 @@ import detectEthereumProvider from "@metamask/detect-provider"
 import Layout from "../components/layout"
 import * as styles from "../styles/farm.module.css"
 
+const getTime = () => {
+  const now = new Date().getTime()
+  const timeout = new Date("August 15, 2021 11:00:00 GMT+00:00").getTime()
+  const difference = timeout - now
+  const sec = 1000
+  const min = sec * 60
+  const hr = min * 60
+  const Day = hr * 24
+  return {
+    timeLeft: difference > 0,
+    day: Math.floor(difference / Day),
+    hour: Math.floor((difference % Day) / hr),
+    min: Math.floor((difference % hr) / min),
+    sec: Math.floor((difference % min) / sec),
+  }
+}
 
 
 const getBlockchain = (maskconnect, setMaskConnect) =>
