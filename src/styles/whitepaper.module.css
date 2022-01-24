@@ -1,0 +1,102 @@
+.container {
+  margin: 4rem 0;
+  padding: 1rem 4rem;
+}
+.container h2 {
+  background: linear-gradient(180deg, #c39552, #886736);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.6rem;
+  margin: 2rem 0;
+}
+.container span {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.money {
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem auto 0 auto;
+}
+.chartContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+.chart{
+  width: 50%;
+}
+.pieTag li {
+  font-size: 1.6rem;
+  list-style-type: none;
+  margin: 0.2em;
+  position: relative;
+  font-weight: 600;
+}
+.pieTag li span{
+  color: var(--gold);
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+.pieTag {
+  display: flex;
+  flex: 1;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 2rem 0 0 0;
+}
+.disc {
+  position: absolute;
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 50%;
+  background-color: red;
+  top: 0.4em;
+  left: -1.2em;
+}
+.info{
+  margin: 0.5rem 0 0rem 1.45rem;
+}
+.info li{
+  position: relative;
+  list-style-type:none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  
+}
+.info li::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 8px;
+  /* border-radius: 50%; */
+  background-color: var(--onyx);
+  top: 0.66em;
+  left: -0.85em;
+}
+
+@media only screen and (max-width: 736px) {
+    .chartContainer{
+      flex-direction: column;
+    }
+    .chart{
+      width: 100%;
+    }
+    .pieTag {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      padding: 3rem ;
+    }
+      
+}
